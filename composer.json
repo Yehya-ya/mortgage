@@ -1,12 +1,9 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "laravel/mortgage-calculator",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": [
-        "laravel",
-        "framework"
-    ],
+    "description": "Mortgage Loan Calculator with Laravel and React",
+    "keywords": ["laravel", "mortgage", "calculator", "loan", "amortization"],
     "license": "MIT",
     "require": {
         "php": "^8.2",
