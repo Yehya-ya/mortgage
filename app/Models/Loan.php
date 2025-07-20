@@ -45,4 +45,14 @@ class Loan extends Model
     {
         return $this->hasMany(ExtraRepaymentSchedule::class);
     }
+
+    public function getMonthlyInterestRateAttribute(): float
+    {
+        return ($this->annual_interest_rate / 12) / 100;
+    }
+
+    public function getTotalMonthsAttribute(): int
+    {
+        return $this->loan_term_years * 12;
+    }
 }
