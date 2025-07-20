@@ -35,4 +35,9 @@ class Loan extends Model
         'effective_interest_rate' => 'float',
         'interest_saved' => 'float'
     ];
+
+    public function amortizationSchedule(): HasMany
+    {
+        return $this->hasMany(LoanAmortizationSchedule::class);
+    }
 }
